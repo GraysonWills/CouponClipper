@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CouponClipper for Kroger</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>CouponClipper</h1>
+    <p>Automatically clip coupons from Kroger</p>
+    
+    <div class="action-section">
+      <button id="clipNowBtn" class="primary-btn">Clip Coupons Now</button>
+      <button id="stopClippingBtn" class="danger-btn" style="display: none;">Stop Clipping</button>
+    </div>
+    
+    <div class="clipping-status" style="display: none;">
+      <div class="progress-container">
+        <div class="progress-label">Coupons clipped: <span id="couponCount">0</span></div>
+        <div class="progress-message" id="progressMessage"></div>
+      </div>
+    </div>
+    
+    <div class="schedule-section">
+      <h2>Schedule Clipping</h2>
+      <div class="time-picker">
+        <label for="scheduleTime">Set time:</label>
+        <input type="time" id="scheduleTime">
+      </div>
+      <div class="days-selector">
+        <p>Select days:</p>
+        <div class="days-grid">
+          <label><input type="checkbox" value="0"> Sun</label>
+          <label><input type="checkbox" value="1"> Mon</label>
+          <label><input type="checkbox" value="2"> Tue</label>
+          <label><input type="checkbox" value="3"> Wed</label>
+          <label><input type="checkbox" value="4"> Thu</label>
+          <label><input type="checkbox" value="5"> Fri</label>
+          <label><input type="checkbox" value="6"> Sat</label>
+        </div>
+      </div>
+      <div class="schedule-actions">
+        <button id="saveScheduleBtn" class="secondary-btn">Save Schedule</button>
+        <button id="clearScheduleBtn" class="secondary-btn">Clear Schedule</button>
+      </div>
+    </div>
+    
+    <div class="status-section">
+      <p id="statusMessage"></p>
+      <p id="nextRunTime"></p>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

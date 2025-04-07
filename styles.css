@@ -1,0 +1,129 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 320px;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding: 16px;
+}
+
+h1 {
+  color: #0066c0;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+h2 {
+  font-size: 16px;
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+
+.action-section, .schedule-section, .status-section, .clipping-status {
+  margin-top: 16px;
+}
+
+.primary-btn, .secondary-btn, .danger-btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+.primary-btn {
+  background-color: #0066c0;
+  color: white;
+  width: 100%;
+  padding: 12px;
+}
+
+.primary-btn:hover {
+  background-color: #004d99;
+}
+
+.danger-btn {
+  background-color: #d9534f;
+  color: white;
+  width: 100%;
+  padding: 12px;
+}
+
+.danger-btn:hover {
+  background-color: #c9302c;
+}
+
+.secondary-btn {
+  background-color: #e7e7e7;
+  color: #333;
+  margin-right: 8px;
+}
+
+.secondary-btn:hover {
+  background-color: #d7d7d7;
+}
+
+.time-picker {
+  margin-bottom: 12px;
+}
+
+.time-picker input {
+  margin-left: 8px;
+  padding: 4px;
+}
+
+.days-selector p {
+  margin-bottom: 8px;
+}
+
+.days-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+}
+
+.schedule-actions {
+  margin-top: 16px;
+  display: flex;
+}
+
+.status-section {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid #e7e7e7;
+  font-size: 14px;
+  color: #666;
+}
+
+#statusMessage {
+  margin-bottom: 4px;
+}
+
+#nextRunTime {
+  font-weight: bold;
+}
+
+.clipping-status {
+  background-color: #f8f9fa;
+  border-radius: 4px;
+  padding: 12px;
+  margin-top: 16px;
+}
+
+.progress-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.progress-label {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.progress-message {
+  font-size: 13px;
+  color: #666;
+}

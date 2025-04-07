@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "CouponClipper for Kroger",
+  "version": "1.0",
+  "description": "Automatically clips coupons from Kroger's website",
+  "permissions": ["storage", "alarms", "scripting", "tabs", "notifications"],
+  "host_permissions": ["https://www.kroger.com/*"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/icon16.png",
+      "48": "images/icon48.png",
+      "128": "images/icon128.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.kroger.com/savings/cl/coupons/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": {
+    "16": "images/icon16.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  }
+}
